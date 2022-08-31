@@ -19,6 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/users', function () {
-    return DB::select('select * from users');
-    // return
+    return DB::table('users')->get();
 });
